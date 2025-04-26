@@ -1,0 +1,14 @@
+defaultPortal: thenumberco
+portals:
+  - name: thenumberco
+    portalId: 341707179
+    env: prod
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CNvqypXnMhIaAA0AQAAA4C0DQAJYAgEAAPgAAAAAAAAAAAYYq5P4ogEg7sjhJSju6QwyFHq3dxKz-77HQbN9Z-s39CCH8C1fOk8AAARBAAAAeAAAAAAAAAAAAIAAAAAAAAQAAMAHAI7wMTxgEAYARABgQPwYBgAQIAMAAAAAADz-AwAAAAAAAAAMBAAAAAAAAAAAAAAQAADAQhQluV5cpU1APNUnTf4QBZClsWtJv0oDbmEzUgBaAGAAaO7I4SVwAA
+        expiresAt: '2025-04-26T15:23:56.676Z'
+    accountType: STANDARD
+    personalAccessKey: >-
+      CiRuYTMtODkwMS0zMjVlLTQ0MWYtOTE4MC1hN2NmODQ1N2JjMTIQq5P4ogEY7sjhJSoZAAXmkYKbrgwpjdWLGZ24X7qz2A94JqC-50oDbmEz
