@@ -1,0 +1,109 @@
+<html lang="en" style="--preferred-bg-color: #1a1a1a; --preferred-color: #E6E6E6; --csb-cursor: pointer; --vscode-header-border: rgba(240, 240, 240, 0.2);" class="t-cukNRE dark"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+      background: var(--preferred-bg-color);  overscroll-behavior-x: none; margin: 0; padding: 0;}
+    html { overscroll-behavior-x: none;  margin: 0; padding: 0; }
+
+</style>
+
+<link href="//sandpack-cdn-v2.codesandbox.io" rel="preconnect">
+
+<link href="https://codesandbox.io/p/fonts/inter/inter.css" rel="stylesheet">
+  <!-- <script>
+  try {
+    let bgColor = "#0D0D0D"
+    let color = "#E6E6E6"
+
+    const preferredTheme = window.localStorage.getItem("CSB/THEME/0.1")
+
+    if (preferredTheme) {
+      if (preferredTheme) {
+        const data = JSON.parse(preferredTheme)
+
+        // Old theme
+        if (data.type && data.colors) {
+          bgColor = data.colors["neutral-bg-base"]
+          color = data.type === "light" ? "#1A1A1A" : "#E6E6E6"
+        }
+
+      }
+    }
+    document.documentElement.style.setProperty(
+      "--preferred-bg-color",
+      bgColor
+    );
+    document.documentElement.style.setProperty(
+      "--preferred-color",
+      color
+    );
+  } catch (error) {
+    console.log("Could not set preferred theme", error)
+    // no op
+  }
+  </script> -->
+
+<!-- <style>
+    @keyframes ssr-loading-color {
+        0% {
+            stroke: #9D8BF9;
+        }
+        24% {
+            stroke: #9D8BF9;
+        }
+        25% {
+            stroke: #9D8BF9;
+        }
+        49% {
+            stroke: #9D8BF9;
+        }
+        50% {
+            stroke: #F68484;
+        }
+        74% {
+            stroke: #F68484;
+        }
+        75% {
+            stroke: #F68484;
+        }
+        99% {
+            stroke: #F68484;
+        }
+    }
+
+    @keyframes ssr-loading-spacing {
+        0% {
+            stroke-DashArray: 0 200;
+        }
+        45% {
+            stroke-DashOffset: 0;
+            stroke-DashArray: 200 200;
+        }
+        90% {
+            stroke-DashOffset: -200;
+            stroke-DashArray: 200 200;
+        }
+        100% {
+            stroke-DashOffset: -200;
+            stroke-DashArray: 200 200;
+        }
+    }
+</style> -->
+
+
+<!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.64/build/spline-viewer.js" async></script>
+<spline-viewer url="https://prod.spline.design/0sHwIqf0gcU7BWUg/scene.splinecode"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAJ+ElEQVR4AQCBAH7/AOzHYhTsx2IR7MdiCuzHYgHsx2IA7MdiAOzHYgDsx2IA7MdiAOzHYgPsx2IS7MdiJOzHYjbsx2JG7MdiUuzHYljsx2JY7MdiUuzHYkbrx2I268diJOvHYxLrx2MD68djAOvHYwDrx2MA68djAOvGYwDrxmQB68ZkCuvGZBHrxmQUAIEAfv8A7MhhE+zIYQ/syGEI7MhhAOzIYQDsyGEA7MhhAOzIYQDsyGEA7MhhAuzIYRHsyGEj7MhhNezIYUXsyGFR7MhhWOzIYVjsyGFR7MhhRezHYTXsx2Ij7MdiEuzHYgLsx2IA68diAOvHYgDrx2MA68djAOvHYwDrx2MJ68djD+vHYxMAgQB+/wDtyGAQ7chgDO3IYAXtyGAA7chgAO3IXwDtyF8A7chfAO3IXwDtyV8B7clfEO3JXyPtyF817chfRe3IX1HtyGBX7chgV+3IYFHtyGBF7chgNe3IYCPsyGAR7MhgAezIYQDsyGEA7MhhAOzIYQDsyGEA7MhhAOzIYQfsyGEO7MhhEQCBAH7/AO7JXg3uyV4J7sldA+7JXQDuyV0A7sldAO7JXQDuyl0A7spdAO7KXQDuyl0Q7spdIu7KXTXuyl1F7spdUe7JXVjuyV1Y7sleUe7JXkXuyV417sleIu7JXhDtyV4A7cleAO3JXwDtyV8A7clfAO3JXwDtyV8A7clfBe3JXwztyV8PAIEAfv8A78tbC+/LWwfvy1sB78tbAO/LWwDvy1sA78tbAO/LWwDvy1sA78tbAO/LWxHvy1sj78tbNu/LW0bvy1tS78tbWe/LW1nvy1tS78tbRu/LWzXvylsj78pcEO/KXADvylwA78pcAO/KXADuylwA7spcAO7KXQDuyl0E7spdCu7KXQ4AgQB+/wDwzFkK8MxZB/DMWQHwzFgA8MxYAPDMWADwzFgA8MxYAPDMWADwzFgC8MxYE/DMWCXwzFg48MxYSfDMWFXwzFhb8MxYW/DMWVTwzFlI8MxZN/DMWSTwzFkS8MxZAfDMWQDwy1kA8MtaAPDLWgDwy1oA8MtaAPDLWgPwy1oK8MtaDQCBAH7/APLNVgzyzVYI8s1WAvLNVgDyzVYA8s1WAPLNVgDyzVYA8s1WAPLNVgXyzVYW8s1WKfLNVjzyzVZM8s1WWPLNVl/yzVZe8s1WV/LNVkrxzVY68c1WJvHNVhPxzVcD8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8cxXBPHMVwrxzFcOAIEAfv8A885UD/POVAvzzlQF885UAPPOVADzzlQA885UAPPOVADzzlQA885UCfPOVBrzzlQt885UP/POVFDzzlRc885UYvPOVGHzzlRa885UTfPOVDzyzlQo8s5UFfLOVATyzlUA8s5VAPLOVQDyzlUA8s5VAPLOVQDyzlUF8s5VC/LOVQ8AgQB+/wDzz1MS889TDvPPUwjzz1MB889SAPPPUgDzz1IA889SAPPPUgDzz1IM9M9SHfTPUjD0z1JC9M9SUvTPUl70z1Jk889SY/PPUlzzz1JO889TPfPPUynzz1MW889TBfPPUwDzz1MA889TAPPPUwDzzlMA885UAPPOVAbzzlQM885UEACBAH7/APTPUhX0z1IR9M9SC/TPUgT0z1IA9M9SAPTPUgD0z1IA9M9RAfTPUQ70z1Ef9NBRMfTQUUP00FFT9NBRX/TQUWT0z1Fj9M9RW/TPUk70z1I89M9SKfTPUhX0z1IE9M9SAPTPUgDzz1IA889SAPPPUgDzz1MA889TBvPPUwzzz1MQAIEAfv8A9M9SFvTPUhP0z1IN9M9SBfTPUgD0z1IA9M9RAPTPUQD00FEB9NBRDvTQUR700FEw9NBRQvTQUVH00FFd9NBRYvTQUWD00FFZ9NBRS/TPUTn0z1Im9M9SE/TPUgL0z1IA9M9SAPTPUgD0z1IA889SAPPPUgDzz1IF889SDPPPUhAAgQB+/wDzz1IW889SE/PPUgzzz1IF9M9SAPTPUgD0z1IA9M9SAPTPUgD0z1IL9M9SG/TPUi30z1I+9M9STfTPUlj0z1Jd9M9SXPTPUlT0z1JG9M9SNfTPUiH0z1IO889SAPPPUgDzz1IA889TAPPPUwDzz1MA889TAPPPUwTzz1ML889TDwCBAH7/APPOVBXzzlQR885UC/POUwPzzlMA885TAPPPUwDzz1MA889TAPPPUwfzz1MX889TKPPPUznzz1NI889TUvPPU1fzz1NV889TTfPPU0Dzz1Mu889TG/PPUwnzzlMA885TAPPOVADzzlQA885UAPPOVADzzlQA885UA/POVArzzlQOAIEAfv8A8s5VE/LOVQ/yzlUJ8s5VAPLOVQDyzlUA8s5VAPLOVQDyzlUA8s5VAvLOVRHyzlUi8s5VMvLOVUHyzlVL8s5VUPLOVU7yzlVG8s5VOfLOVSjyzlUV8s5VA/LOVQDyzlUA8s5VAPLOVQDyzlUA8s1VAPLNVQDyzVYC8s1WCfLNVg0AgQB+/wDxzVcQ8c1XDfHNVwbxzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8c1XC/HNVhzxzVYs8c1WOvHNVkTxzVZJ8c1WR/HNVj/xzVYy8c1WIvHNVw/xzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwLxzVcK8c1XDgCBAH7/APDMWQ7wzFkL8MxZBPDMWQDwzFkA8MxZAPDMWQDwzFkA8MxZAPDMWADwzFgG8MxYFvDMWCbxzFg08cxYPvHMWEPxzFhB8cxYOfDMWC3wzFgd8MxYC/DMWADwzFkA8MxZAPDMWQDwzFkA8MxZAPDMWQDwzFkA8MxZA/DMWQvwzFkPAIEAfv8A78tbDe/LWwnvy1sC78tbAO/LWgDvy1oA78taAO/LWgDwy1oA8MtaAPDLWgLwy1oS8MtaIvDLWi/wy1o58MtaPvDLWjzwy1o18MtaKfDLWhnwy1oI8MtaAPDLWgDvy1oA78taAO/LWgDvy1oA78tbAO/LWwDvy1sE78tbDe/LWxEAgQB+/wDvylwM78pcCO/KXAHvylwA78pcAO/KXADvylwA78pbAO/KWwDvy1sA78tbAO/LWw/vy1sf78tbLO/LWzbvy1s778tbOe/LWzLvy1sm78tbF+/LWwbvy1sA78tbAO/KWwDvylsA78pcAO/KXADvylwA78pcAO/KXAbvylwP78pcEwGBAH7/AO7KXQzuylwI7spcAO7KXADuylwA7spcAO/KXADvylwA78pcAO/KXADvylwA78pcDu/KXB3vylwr78pcNe/KXDnvylw478pcMe/KXCXvylwW78pcBe/KXADvylwA78pcAO/KXADvylwA7spcAO7KXADuylwA7spcB+7KXBDuyl0UQAkm8nWXr6UAAAAASUVORK5CYII=" alt="Spline preview" style="width: 100%; height: 100%;"/></spline-viewer> -->
+
+
+    <script type="module" crossorigin="" src="/p/assets/index-fb081f72.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/p/assets/vendor-ee51c33d.js">
+    <link rel="stylesheet" href="/p/assets/index-1b3a74fc.css">
+    
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.64/build/spline-viewer.js" async></script>
+<spline-viewer url="https://prod.spline.design/0sHwIqf0gcU7BWUg/scene.splinecode">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAJ+ElEQVR4AQCBAH7/AOzHYhTsx2IR7MdiCuzHYgHsx2IA7MdiAOzHYgDsx2IA7MdiAOzHYgPsx2IS7MdiJOzHYjbsx2JG7MdiUuzHYljsx2JY7MdiUuzHYkbrx2I268diJOvHYxLrx2MD68djAOvHYwDrx2MA68djAOvGYwDrxmQB68ZkCuvGZBHrxmQUAIEAfv8A7MhhE+zIYQ/syGEI7MhhAOzIYQDsyGEA7MhhAOzIYQDsyGEA7MhhAuzIYRHsyGEj7MhhNezIYUXsyGFR7MhhWOzIYVjsyGFR7MhhRezHYTXsx2Ij7MdiEuzHYgLsx2IA68diAOvHYgDrx2MA68djAOvHYwDrx2MJ68djD+vHYxMAgQB+/wDtyGAQ7chgDO3IYAXtyGAA7chgAO3IXwDtyF8A7chfAO3IXwDtyV8B7clfEO3JXyPtyF817chfRe3IX1HtyGBX7chgV+3IYFHtyGBF7chgNe3IYCPsyGAR7MhgAezIYQDsyGEA7MhhAOzIYQDsyGEA7MhhAOzIYQfsyGEO7MhhEQCBAH7/AO7JXg3uyV4J7sldA+7JXQDuyV0A7sldAO7JXQDuyl0A7spdAO7KXQDuyl0Q7spdIu7KXTXuyl1F7spdUe7JXVjuyV1Y7sleUe7JXkXuyV417sleIu7JXhDtyV4A7cleAO3JXwDtyV8A7clfAO3JXwDtyV8A7clfBe3JXwztyV8PAIEAfv8A78tbC+/LWwfvy1sB78tbAO/LWwDvy1sA78tbAO/LWwDvy1sA78tbAO/LWxHvy1sj78tbNu/LW0bvy1tS78tbWe/LW1nvy1tS78tbRu/LWzXvylsj78pcEO/KXADvylwA78pcAO/KXADuylwA7spcAO7KXQDuyl0E7spdCu7KXQ4AgQB+/wDwzFkK8MxZB/DMWQHwzFgA8MxYAPDMWADwzFgA8MxYAPDMWADwzFgC8MxYE/DMWCXwzFg48MxYSfDMWFXwzFhb8MxYW/DMWVTwzFlI8MxZN/DMWSTwzFkS8MxZAfDMWQDwy1kA8MtaAPDLWgDwy1oA8MtaAPDLWgPwy1oK8MtaDQCBAH7/APLNVgzyzVYI8s1WAvLNVgDyzVYA8s1WAPLNVgDyzVYA8s1WAPLNVgXyzVYW8s1WKfLNVjzyzVZM8s1WWPLNVl/yzVZe8s1WV/LNVkrxzVY68c1WJvHNVhPxzVcD8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8cxXBPHMVwrxzFcOAIEAfv8A885UD/POVAvzzlQF885UAPPOVADzzlQA885UAPPOVADzzlQA885UCfPOVBrzzlQt885UP/POVFDzzlRc885UYvPOVGHzzlRa885UTfPOVDzyzlQo8s5UFfLOVATyzlUA8s5VAPLOVQDyzlUA8s5VAPLOVQDyzlUF8s5VC/LOVQ8AgQB+/wDzz1MS889TDvPPUwjzz1MB889SAPPPUgDzz1IA889SAPPPUgDzz1IM9M9SHfTPUjD0z1JC9M9SUvTPUl70z1Jk889SY/PPUlzzz1JO889TPfPPUynzz1MW889TBfPPUwDzz1MA889TAPPPUwDzzlMA885UAPPOVAbzzlQM885UEACBAH7/APTPUhX0z1IR9M9SC/TPUgT0z1IA9M9SAPTPUgD0z1IA9M9RAfTPUQ70z1Ef9NBRMfTQUUP00FFT9NBRX/TQUWT0z1Fj9M9RW/TPUk70z1I89M9SKfTPUhX0z1IE9M9SAPTPUgDzz1IA889SAPPPUgDzz1MA889TBvPPUwzzz1MQAIEAfv8A9M9SFvTPUhP0z1IN9M9SBfTPUgD0z1IA9M9RAPTPUQD00FEB9NBRDvTQUR700FEw9NBRQvTQUVH00FFd9NBRYvTQUWD00FFZ9NBRS/TPUTn0z1Im9M9SE/TPUgL0z1IA9M9SAPTPUgD0z1IA889SAPPPUgDzz1IF889SDPPPUhAAgQB+/wDzz1IW889SE/PPUgzzz1IF9M9SAPTPUgD0z1IA9M9SAPTPUgD0z1IL9M9SG/TPUi30z1I+9M9STfTPUlj0z1Jd9M9SXPTPUlT0z1JG9M9SNfTPUiH0z1IO889SAPPPUgDzz1IA889TAPPPUwDzz1MA889TAPPPUwTzz1ML889TDwCBAH7/APPOVBXzzlQR885UC/POUwPzzlMA885TAPPPUwDzz1MA889TAPPPUwfzz1MX889TKPPPUznzz1NI889TUvPPU1fzz1NV889TTfPPU0Dzz1Mu889TG/PPUwnzzlMA885TAPPOVADzzlQA885UAPPOVADzzlQA885UA/POVArzzlQOAIEAfv8A8s5VE/LOVQ/yzlUJ8s5VAPLOVQDyzlUA8s5VAPLOVQDyzlUA8s5VAvLOVRHyzlUi8s5VMvLOVUHyzlVL8s5VUPLOVU7yzlVG8s5VOfLOVSjyzlUV8s5VA/LOVQDyzlUA8s5VAPLOVQDyzlUA8s1VAPLNVQDyzVYC8s1WCfLNVg0AgQB+/wDxzVcQ8c1XDfHNVwbxzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8c1XC/HNVhzxzVYs8c1WOvHNVkTxzVZJ8c1WR/HNVj/xzVYy8c1WIvHNVw/xzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwDxzVcA8c1XAPHNVwLxzVcK8c1XDgCBAH7/APDMWQ7wzFkL8MxZBPDMWQDwzFkA8MxZAPDMWQDwzFkA8MxZAPDMWADwzFgG8MxYFvDMWCbxzFg08cxYPvHMWEPxzFhB8cxYOfDMWC3wzFgd8MxYC/DMWADwzFkA8MxZAPDMWQDwzFkA8MxZAPDMWQDwzFkA8MxZA/DMWQvwzFkPAIEAfv8A78tbDe/LWwnvy1sC78tbAO/LWgDvy1oA78taAO/LWgDwy1oA8MtaAPDLWgLwy1oS8MtaIvDLWi/wy1o58MtaPvDLWjzwy1o18MtaKfDLWhnwy1oI8MtaAPDLWgDvy1oA78taAO/LWgDvy1oA78tbAO/LWwDvy1sE78tbDe/LWxEAgQB+/wDvylwM78pcCO/KXAHvylwA78pcAO/KXADvylwA78pbAO/KWwDvy1sA78tbAO/LWw/vy1sf78tbLO/LWzbvy1s778tbOe/LWzLvy1sm78tbF+/LWwbvy1sA78tbAO/KWwDvylsA78pcAO/KXADvylwA78pcAO/KXAbvylwP78pcEwGBAH7/AO7KXQzuylwI7spcAO7KXADuylwA7spcAO/KXADvylwA78pcAO/KXADvylwA78pcDu/KXB3vylwr78pcNe/KXDnvylw478pcMe/KXCXvylwW78pcBe/KXADvylwA78pcAO/KXADvylwA7spcAO7KXADuylwA7spcB+7KXBDuyl0UQAkm8nWXr6UAAAAASUVORK5CYII=" alt="Spline preview" style="width: 100%; height: 100%;"/>
+</spline-viewer>
+
+</body></html>
